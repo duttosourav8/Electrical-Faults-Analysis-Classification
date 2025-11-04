@@ -164,11 +164,11 @@ If you use this repository, please cite:
   title  = {Electrical Faults Analysis & Classification},
   author = {Sourav Datto},
   year   = {2025},
-  url    = {https://github.com/<your-username>/electrical-faults-analysis-classification}
+  url    = {https://github.com/duttosourav8/Electrical-Faults-Analysis-Classification}
 }
 ```
 
 
 
-Built with **NumPy**, **Pandas**, **Matplotlib**, **Seaborn**, **scikit-learn**, and optional **LIME/SHAP** for explainability.
+Built with **NumPy**, **Pandas**, **Matplotlib**, **Seaborn**, **scikit-learn**, and **LIME/SHAP** for explainability.
 
