@@ -27,7 +27,7 @@ The script performs:
 > If your script still uses Colab-style paths (`/content/...`), change them to:
 > - Detection CSV → `data/detect_dataset.csv`  
 > - Classification CSV → `data/classData.csv`  
-> - Saved figures → e.g. `outputs/...` (you can create an `outputs/` folder)
+> - Saved figures → e.g. `outputs/...` 
 
 ---
 
@@ -78,7 +78,7 @@ The script will:
 - Train multiple models for detection & classification
 - Print classification reports
 - Plot confusion matrices and ROC curves
-- (Optional) Produce LIME local explanations
+-  Produce LIME local explanations
 
 > If you add an `outputs/` directory and update the save paths in the code, figures/tables can be exported instead of only being shown.
 
@@ -153,17 +153,7 @@ Create an `outputs/` folder and replace `plt.show()` with `plt.savefig("outputs/
 **Imbalanced classes**  
 You’re already using class weights in tree models; you can also try **StratifiedKFold**, oversampling, or focal loss (with other frameworks).
 
-**LIME not installed**  
-Install optional explainers:
-```bash
-pip install lime shap
-```
-(Some environments require extra system libs for SHAP.)
 
-**Colab vs Local**  
-Remove `!pip install ...` and magic commands when running locally. Use `requirements.txt` instead.
-
----
 
 ## Citation
 
