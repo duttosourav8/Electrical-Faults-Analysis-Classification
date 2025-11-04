@@ -8,7 +8,7 @@ The script performs:
 - Feature engineering (zero-sequence components, magnitudes, imbalance indices)
 - Model training & evaluation for **detection** and **classification**
 - Cross-validation, ROC-AUC, confusion matrices, and comparison plots
-- (Optional) Local explainability using **LIME**
+- Local explainability using **LIME**
 
 ---
 
@@ -18,7 +18,7 @@ The script performs:
 .
 ├─ data/
 │  └─ .gitkeep                     # Keep folder in Git; put your CSVs here
-├─ Electrical Faults Analysis & Classification.py
+├─ Electrical_faults_analysis_&_classification.py
 ├─ requirements.txt
 ├─ LICENSE
 └─ README.md
@@ -69,7 +69,7 @@ Make sure both CSVs are numeric and free of malformed rows.
 ## Run
 
 ```bash
-python "Electrical Faults Analysis & Classification.py"
+python "Electrical_faults_analysis_&_classification.py"
 ```
 
 The script will:
@@ -150,8 +150,7 @@ Update hardcoded paths from `/content/...` to `data/...`. Ensure files exist.
 **Matplotlib/Seaborn showing but not saving**  
 Create an `outputs/` folder and replace `plt.show()` with `plt.savefig("outputs/your_plot.png", dpi=300, bbox_inches="tight")` where desired.
 
-**Imbalanced classes**  
-You’re already using class weights in tree models; you can also try **StratifiedKFold**, oversampling, or focal loss (with other frameworks).
+
 
 
 
